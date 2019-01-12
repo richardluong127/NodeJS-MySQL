@@ -13,22 +13,22 @@ CREATE TABLE products
 );
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Ghostware Laptop", "Computers", 5999.99, 800);
+VALUES ("Ghostware Laptop", "Computers", 3999.99, 800);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Tesla v3.1", "Automotive", 33333.33, 333);
+VALUES ("Tesla v3", "Automotive", 33333.33, 333);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Tesla Fast Charger", "Automotive", 66667.67, 333);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Stories By James Earl Jones Limited Edition", "Audiobooks", 200.00, 10000);
+VALUES ("Stories Voiced By James Earl Jones", "Audiobooks", 25.00, 10000);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("ByteCoin Mining Rig", "Computers", 13337.00, 100);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("SiriusPwr Regenerative Generator 90000W", "Batteries", 9000.00, 1000);
+VALUES ("SiriusPwr Generator", "Batteries", 900.00, 1000);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Mercuryfish", "Pets", 666.00, 88);
@@ -37,10 +37,12 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Mercuryfish Flakes", "Pets", 50.00, 3000);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("T-Rex Authentic Fossilized Skeleton Complete", "Home and Garden", 2000000.00, 50);
+VALUES ("T-Rex Skeleton", "Home and Garden", 2000000.00, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
 VALUES ("Flying Nimbus", "Hobbies", 50000.00, 50);
 
 INSERT INTO products (product_name, department_name, price, stock_quantity)
-VALUES ("Nevermelt Snowman", "Home and Garden", 3000.00, 1200);
+VALUES ("Snowman", "Home and Garden", 50.00, 10000);
+
+SELECT * FROM bamazon.products;
