@@ -20,16 +20,18 @@ var start = function () {
         for (var i = 0; i < res.length; i++) {
             console.log(res[i].item_id + " || " + res[i].product_name + " || Dept: " + res[i].department_name + " || Price: " + res[i].price + " || Qty Avail: " + res[i].stock_quantity + "\n");
         }
+        console.log("This is response 1: ",res);
         askCustomer(res);
     })
 }
 
 var askCustomer = function (res) {
+    console.log("This is response 2: ", res);
     inquirer
         .prompt({
             type: "input",
             name: "choice",
-            message: "What would you like to purchase?  [N for Next Time]",
+            message: "What would you like to purchase?",
 
         }).then(function (answer) {
 
@@ -60,12 +62,12 @@ var askCustomer = function (res) {
                                 function (err) {
                                     if (err) throw err;
                                     console.log("Item successfully purchased!");
-                                    start();
+                                    askCustomer(res);
                                 }
                             )
                         } else {
                             console.log("Not enough quantity on hand!");
-                            askCustomer();
+                            askCustomer(res);
                     }}
                     )
                 }
