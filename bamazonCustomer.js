@@ -63,8 +63,10 @@ var askCustomer = function (res) {
                                     start();
                                 }
                             )
-                        };
-                    }
+                        } else {
+                            console.log("Not enough quantity on hand!");
+                            askCustomer();
+                    }}
                     )
                 }
             }
