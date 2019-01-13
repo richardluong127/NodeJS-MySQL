@@ -12,5 +12,5 @@ Happy shopping!
 
 Here's an example of what to expect:
 
-![Bamazon App](liri-node-app/LiriExample.png)
-Format: ![Alt Text](liri-node-app/LiriExample.png)
+![Bamazon App](NodeJS-MySQL/BamazonExample.png)
+Format: ![Alt Text](NodeJS-MySQL/BamazonExample.png)
